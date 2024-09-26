@@ -1,0 +1,27 @@
+body {
+    color: #2f3634;
+    background-color: #498b7a;
+    font-family: Oswald, "Times New Roman", serif;
+}
+header {
+    text-align: center;
+}
+h1,h2,h3,h4,h5 {
+    font-family: Josefin Sans, Impact, sans-serif;
+    font-size: 400%;
+}
+#hero, footer{
+    text-align: center;
+    background-color: #a15c47;
+    color: white;
+    padding: 20px;
+    border: 15px outset #2f3634;
+    border-radius: 40px;
+}
+#hero img {
+    width: 300px;
+}
+#bio, #hobbies{
+    text-align: center;
+    padding: 20px;
+}
