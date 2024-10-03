@@ -47,6 +47,9 @@ img {
     border-radius: 60px;
     text-align: center;
     margin-bottom:2em;
+    background-color: #2f3634;
+    color: #2be0B0;
+    border-color: bisque;
 }
 #gallery hr {
     border:none;
@@ -69,9 +72,9 @@ img {
 
 #lit p:first-letter {
     color: #a15c47;
-    background-color: #2f3634;
-    border: 6px double wheat;
-    text-shadow: 0px 0px 3 px wheat;
+    background-color: bisque;
+    border: 10px double #a15c47;
+    text-shadow: 3px 3px 4px black;
     float: left;
     font-size: 4em;
     margin-right: .25ex;
