@@ -10,6 +10,8 @@ header {
 h1,h2,h3,h4,h5 {
     font-family: Josefin Sans, Impact, sans-serif;
     font-size: 400%;
+    text-align: center;
+    padding: 20px;
 }
 #hero, footer{
     text-align: center;
@@ -22,18 +24,13 @@ h1,h2,h3,h4,h5 {
 #hero img {
     width: 300px;
 }
-#bio, #hobbies{
+#bio {
     text-align: center;
-    padding: 20px;
 }
 
-#food img{
-    width: 300px;
-}
+/* Hobbies */
 
-#food {
-    padding: 30px;
-    color: wheat;
-    font-size: 125%;
-    border: 10px double #2f3634;
+#hobbies ul li:nth-child(even) {
+    color:#a15c47;
+
 }
