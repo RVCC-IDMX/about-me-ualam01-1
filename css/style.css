@@ -2,6 +2,7 @@ body {
     color: #2f3634;
     background-color: #498b7a;
     font-family: Oswald, "Times New Roman", serif;
+    font-size: 125%;
 }
 header {
     text-align: center;
@@ -24,4 +25,15 @@ h1,h2,h3,h4,h5 {
 #bio, #hobbies{
     text-align: center;
     padding: 20px;
+}
+
+#food img{
+    width: 300px;
+}
+
+#food {
+    padding: 30px;
+    color: wheat;
+    font-size: 125%;
+    border: 10px double #2f3634;
 }
