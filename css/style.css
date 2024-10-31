@@ -139,7 +139,7 @@ img {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom:6rem;
+    padding-bottom:2rem;
 }
 #videoContainer {
     position:relative;
@@ -149,7 +149,7 @@ img {
 }
 
 
-#myVideo {
+#Video {
     position:absolute;
     top:0;
     left:0;
