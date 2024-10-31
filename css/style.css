@@ -103,8 +103,9 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-left: 1rem;
+        color: wheat;
     }
 
     #lit div {
@@ -145,7 +146,8 @@ img {
     position:relative;
     overflow:hidden;
     width:100%;
-    padding-top:56.25%;
+    padding-top:10%;
+    padding-bottom: 20%;
 }
 
 
