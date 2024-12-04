@@ -2,7 +2,7 @@ body {
     color: #2f3634;
     background-color: #498b7a;
     font-family: Oswald, "Times New Roman", serif;
-    font-size: 125%;
+    font-size: 150%;
 }
 header {
     text-align: center;
@@ -12,6 +12,7 @@ h1,h2,h3,h4,h5 {
     font-size: 325%;
     text-align: center;
     padding: 20px;
+    color: whitesmoke;
 }
 img {
     max-width: 100%;
@@ -58,6 +59,7 @@ img {
 
 #lit {
     text-align:justify;
+    padding-bottom: 3%;
 }
 #lit div {
     padding:2em;
@@ -92,6 +94,7 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 5%;
     }
 
     figure {
@@ -118,6 +121,7 @@ img {
     #gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 5%;
     }
 
     hr {
@@ -159,4 +163,50 @@ img {
     bottom:0;
     width:100%;
     height:100%;
+}
+
+/* Contact Form */
+
+#formElements {
+    display:grid;
+    row-gap: .5em;
+}
+
+#contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px solid #4F415C;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+legend {
+    background-color: #4F415C;
+    color: white;
+    padding:.5em;
+}
+#contact input, #contact textarea, #contact select, #contact button {
+    padding:.5em;
+    font-size:1rem;
+}
+
+#contact ul {
+    list-style: none;
+    padding:0px;
+}
+#contact li {
+    margin:1rem;
+}
+
+#contact button {
+    background-color: #4F415C;
+    color: white;
+    border: 1px solid #454459;
+    max-width: 400px;
+    width:50%;
+    justify-self: center;
 }
