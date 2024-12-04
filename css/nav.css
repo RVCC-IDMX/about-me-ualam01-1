@@ -36,7 +36,20 @@ main {
 
 /* logo */
 
+.logo{
+    display: flex;
+    align-items: center;
+}
 
+.logo img{
+    height: 5vw;
+    width: 5w;
+}
+
+.logo h1{
+    font-size: 1.2em;
+}
+}
 
 /* navigation list */
 
