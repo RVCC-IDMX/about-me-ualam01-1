@@ -26,6 +26,12 @@ Netlify Deploy Status Badge:
         - Formatting the webpage to fit different screens and devices 
         - How to ensure that my webpage has good contrasting colors for accessibility requirements
 
+### BLOGPOST REFRENCE SITES:
+
+        - https://www.w3schools.com/css/css3_animations.asp
+        - https://code.visualstudio.com/docs/languages/css
+        - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
+
 ### Roadmap 
 
     In the future, I would like to learn how I can add multiple webpages to my website. Therefore, when I click on a menu icon
