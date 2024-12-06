@@ -27,9 +27,14 @@ img {
     padding: 20px;
     border: 15px outset #2f3634;
     border-radius: 40px;
+    padding-top: 7em;
 }
 #hero img {
     width: 300px;
+}
+
+#bio {
+    padding-top: 7em;
 }
 
 /* Hobbies */
@@ -49,6 +54,7 @@ img {
     color: whitesmoke;
     border-color: bisque;
     overflow:hidden;
+    padding-top: 7em;
 }
 #gallery hr {
     border:none;
@@ -167,6 +173,7 @@ img {
 
 /* Contact Form */
 
+
 #formElements {
     display:grid;
     row-gap: .5em;
@@ -176,6 +183,7 @@ img {
     padding: 1rem;
     max-width: 600px;
     margin: 2rem auto;
+    padding-top: 7em;
 }
 
 fieldset {

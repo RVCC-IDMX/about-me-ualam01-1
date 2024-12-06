@@ -19,26 +19,25 @@
 <body>
 
     <!-- The body tag is where all the stuff is shown to the user. -->
-
+    
     <header>
-
-        <!-- The header shows the page and title. -->
-        <nav class="navbar">
-            <div class="logo"><img src="img/favicon-logo.svg" alt="My favicon logo. UA - Usman Alam Art">
-                <h1>Web Dev 1</h1>
+        <div class="logo"><img src="img/favicon-logo.svg" alt="My favicon logo. UA - Usman Alam Art">
+        <h1>Web Dev 1</h1>
         </div>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#bio">Bio</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#lit">Blog Post</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
-
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#lit">Blog Post</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
         </nav>
-    </header>
-
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
     <main>
 
         <!-- The main contains important page content. -->
@@ -145,8 +144,6 @@
                     The animations run well, even under moderate system load. Simple animations can often perform poorly in JavaScript. The rendering engine can use frame-skipping and other techniques to keep the performance as smooth as possible.
                     Letting the browser control the animation sequence lets the browser optimize performance and efficiency by, for example, reducing the update frequency of animations running in tabs that aren't currently visible."</p>
                      
-                   
-
                 <p>What are Keyframes? Keyframes are used to implement CSS animation, developers define keyframes using the 
                     @keyframes rule. This rule specefies the styles that the element will have at various points during the animation. After defining the keyframes, the animation is applied to an element using the animation property. This property shortcut allows developers to set various aspects of the animation, such as its name, duration, timing function, delay, iteration count, direction, fill mode, and play state. 
                 </p>
@@ -154,6 +151,8 @@
                 <p>When working with CSS animations, applications we have utilized this semester, such as Visual Studio Code (VS Code), can enhance the development experience. VS Code offers features such as syntax highlighting, "IntelliSense" for CSS properties, and extensions that provide real-time previews of animations, aiding in efficient and accurate animation development.</p>
 
                 <p>Using CSS animations in VS Code is further enhanced by its debugging and version control capabilities. Developers can inspect their animations in real-time using browser developer tools alongside the Live Server extension to fine-tune their designs. Git integration allows for tracking changes to animation files, ensuring that previous iterations can be revisited if necessary. By combining these features, VS Code serves as a powerful platform for experimenting with and perfecting CSS animations, helping developers create visually stunning and interactive web pages. </p>
+
+                <p>When creating the code for the animation myself, it was far easier than what I was attempting to do. Reading about how to integrate CSS animation to your photos and seeing all the examples online was overwhelming, but the @keyframes tag made it very easy to grasp. I started out with writing extra code, and it was not working properly. Then, I condensed it and simplified it and voila... I got a rotating picture! Next, I would wish to research hover options on images -which would give my overall website a much cleaner look. </p>
 
                 <hr>
             <figure>

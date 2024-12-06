@@ -32,6 +32,7 @@ Netlify Deploy Status Badge:
         - https://code.visualstudio.com/docs/languages/css
         - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
         - https://imagekit.io/blog/image-rotation-html-and-css-imagekit/ (the link I used tro reference my CSS animation code)
+        - https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1739s (video I used for hamburger navbar)
 
 ### Roadmap 
 
@@ -41,9 +42,7 @@ Netlify Deploy Status Badge:
 
 ### Licensing
 
-_Much of the work I created was dervied from and inspired by lessons that given throughout this course, given by Professor Caruso_ 
-_I, Usman Alam, reserve the copyright to my work_ 
-
-
+_Much of the work I created was dervied from and inspired by lessons given throughout this course by Professor Caruso_ 
+_I, Usman Alam, reserve the copyright for my work - including all artworks and photos displayed on site gallery and YouTube video._ 
 
 

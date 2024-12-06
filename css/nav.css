@@ -1,37 +1,9 @@
-/* make scrolling smooth */
-
-html {
-    scroll-behavior: smooth;  
+:root {
+  --background: rgba(18, 18, 18, 0.90);
 }
 
-/* 
- get rid of padding & sizing on body so
- header is at top
-*/
-
-body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-/* add some padding back to rest of page */
-
-main {
-    padding: 2vw;
-
-}
-
-/* navbar */
-
-.navbar {
-    background-color: #2f3634;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 /* logo */
@@ -42,60 +14,176 @@ main {
 }
 
 .logo img{
-    height: 12vw;
-    width: 12w;
+    height: 10vw;
+    width: 10w;
 }
 
 .logo h1{
     font-size: 1.2em;
 }
 
-/* navigation list */
 
-.navbar-links li {
-    list-style: none;
-    display: block;
-    padding: 0.5em 0;
+/* HAMBURGER BAR STARTS HERE - FOLLOWED ALONG W/ THE FOLLOWING VIDEO (provided by Professor Caruso): https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1739s */
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
-/*  
- style all a tags in header 
- and then on hover
-*/
-
-.navbar-links a {
-    color: whitesmoke;
-    background-color: #2f3634;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    padding: 2rem;
-    text-decoration: none;
-    display: inline-block;
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 
-.navbar-links a:hover,
-.navbar-links a:focus {
-    color:#2f3634;
-    background-color: #a15c47;
-    border-radius: 10px;
-    outline: none ;
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, .75);
 }
 
-/* 
-media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
-*/
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
-@media screen and (min-width: 60rem) {
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  
+  .logo {
+    grid-column: 2 / 3;
+  }
+  
+  nav {
+    all: unset; 
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
     
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .navbar ul {
-        display: flex;
-        justify-content: space-between;
-    }
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
 }
+
+
