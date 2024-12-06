@@ -31,6 +31,7 @@ Netlify Deploy Status Badge:
         - https://www.w3schools.com/css/css3_animations.asp
         - https://code.visualstudio.com/docs/languages/css
         - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
+        - https://imagekit.io/blog/image-rotation-html-and-css-imagekit/ (the link I used tro reference my CSS animation code)
 
 ### Roadmap 
 

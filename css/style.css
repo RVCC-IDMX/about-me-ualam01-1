@@ -210,3 +210,20 @@ legend {
     width:50%;
     justify-self: center;
 }
+/* CSS Animation Code Reference Link: https://imagekit.io/blog/image-rotation-html-and-css-imagekit/ */
+
+#lit img {
+    width: 300px;
+    animation: rotation 6s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  
