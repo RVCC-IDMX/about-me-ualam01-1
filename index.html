@@ -19,26 +19,25 @@
 <body>
 
     <!-- The body tag is where all the stuff is shown to the user. -->
-
+    
     <header>
-
-        <!-- The header shows the page and title. -->
-        <nav class="navbar">
-            <div class="logo"><img src="img/logo-96X96.svg" alt="A blue origami bird. Hi Bob!">
-                <h1>Web Dev 1</h1>
+        <div class="logo"><img src="img/favicon-logo.svg" alt="My favicon logo. UA - Usman Alam Art">
+        <h1>Web Dev 1</h1>
         </div>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#bio">Bio</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#lit">Lit</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
-
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#lit">Blog Post</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
         </nav>
-    </header>
-
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+      
     <main>
 
         <!-- The main contains important page content. -->
@@ -135,41 +134,38 @@
 
 
         <article id="lit">
-            <h2>Some Literary Work</h2>
+            <h2>Blog Post: Using and Understanding CSS Animations</h2>
 
             <div>
-                <p>He then shut the door, and, coming up to her, claimed the good wishes and affection of a sister.
-                    Elizabeth honestly and heartily expressed her delight in the prospect of their relationship. They
-                    shook hands with great cordiality; and then, till her sister came down, she had to listen to all he
-                    had to say of his own happiness, and of Jane’s perfections; and in spite of his being a lover,
-                    Elizabeth really believed all his expectations of felicity to be rationally founded, because they
-                    had for basis the excellent understanding, and super-excellent disposition of Jane, and a general
-                    similarity of feeling and taste between her and himself.</p>
+                <p> CSS animations is a useful tool that helps web developers in creating transitions between different states of various    elements. It also enhances user engagement and provides visual feedback without the need of using Java Script! By using tools to define keyframes and specefying animation properties, developers can control the intermediate steps in animation sequences. Www.w3schools.com defines CSS animation as the following: "An animation lets an element gradually change from one style to another.You can change as many CSS properties you want, as many times as you want. To use CSS animation, you must first specify some keyframes for the animation. Keyframes hold what styles the element will have at certain times". There are many online blogs that help in understanding how CSS animation works! </p>
 
-                <p>It was an evening of no common delight to them all; the satisfaction of Miss Bennet’s mind gave a
-                    glow of such sweet animation to her face, as made her look handsomer than ever. Kitty simpered and
-                    smiled, and hoped her turn was coming soon. Mrs. Bennet could not give her consent or speak her
-                    approbation in terms warm enough to satisfy her feelings, though she talked to Bingley of nothing
-                    else for half an hour; and when Mr. Bennet joined them at supper, his voice and manner plainly
-                    showed how really happy he was.</p>
+                <p>MDN Web Docs gives an educational example of why one would prefer to use CSS animations over traditional methods:
+                    "They're easy to use for simple animations; you can create them without even having to know JavaScript.
+                    The animations run well, even under moderate system load. Simple animations can often perform poorly in JavaScript. The rendering engine can use frame-skipping and other techniques to keep the performance as smooth as possible.
+                    Letting the browser control the animation sequence lets the browser optimize performance and efficiency by, for example, reducing the update frequency of animations running in tabs that aren't currently visible."</p>
+                     
+                <p>What are Keyframes? Keyframes are used to implement CSS animation, developers define keyframes using the 
+                    @keyframes rule. This rule specefies the styles that the element will have at various points during the animation. After defining the keyframes, the animation is applied to an element using the animation property. This property shortcut allows developers to set various aspects of the animation, such as its name, duration, timing function, delay, iteration count, direction, fill mode, and play state. 
+                </p>
 
-                <p>Not a word, however, passed his lips in allusion to it, till their visitor took his leave for the
-                    night; but as soon as he was gone, he turned to his daughter, and said:</p>
+                <p>When working with CSS animations, applications we have utilized this semester, such as Visual Studio Code (VS Code), can enhance the development experience. VS Code offers features such as syntax highlighting, "IntelliSense" for CSS properties, and extensions that provide real-time previews of animations, aiding in efficient and accurate animation development.</p>
 
-                <p>“Jane, I congratulate you. You will be a very happy woman.”</p>
+                <p>Using CSS animations in VS Code is further enhanced by its debugging and version control capabilities. Developers can inspect their animations in real-time using browser developer tools alongside the Live Server extension to fine-tune their designs. Git integration allows for tracking changes to animation files, ensuring that previous iterations can be revisited if necessary. By combining these features, VS Code serves as a powerful platform for experimenting with and perfecting CSS animations, helping developers create visually stunning and interactive web pages. </p>
 
-                <p>Jane went to him instantly, kissed him, and thanked him for his goodness.</p>
+                <p>When creating the code for the animation myself, it was far easier than what I was attempting to do. Reading about how to integrate CSS animation to your photos and seeing all the examples online was overwhelming, but the @keyframes tag made it very easy to grasp. I started out with writing extra code, and it was not working properly. Then, I condensed it and simplified it and voila... I got a rotating picture! Next, I would wish to research hover options on images -which would give my overall website a much cleaner look. </p>
 
-                <p>“You are a good girl;” he replied, “and I have great pleasure in thinking you will be so happily
-                    settled. I have not a doubt of your doing very well together. Your tempers are by no means unlike.
-                    You are each of you so complying, that nothing will ever be resolved on; so easy, that every servant
-                    will cheat you; and so generous, that you will always exceed your income.”</p>
+                <hr>
+            <figure>
+                <img src="img/drawing-audreu-640w.jpg" alt="A drawing of Audrey Hepburn from Sabrina">
+                <figcaption>An example of a rotating CSS animation using @keyframes!</figcaption>
+            </figure>
+
+                
             </div>
-
 
         </article>
 
-
+        
          <!--Video-->
 
 
@@ -258,6 +254,8 @@
             </form>
 
         </section>
+
+        
 
     </main>
 
